@@ -1,6 +1,6 @@
-package carreiras.com.github.fundamentos_jetpack_compose_listas_lazy.repository
+package thiepai.com.github.fundamentos_jetpack_compose_listas_lazy.repository
 
-import carreiras.com.github.fundamentos_jetpack_compose_listas_lazy.model.Game
+import thiepai.com.github.fundamentos_jetpack_compose_listas_lazy.model.Game
 
 fun getAllGames(): List<Game> {
     return listOf(

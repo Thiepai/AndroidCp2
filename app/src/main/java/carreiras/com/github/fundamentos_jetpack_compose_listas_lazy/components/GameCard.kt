@@ -1,4 +1,4 @@
-package carreiras.com.github.fundamentos_jetpack_compose_listas_lazy.components
+package thiepai.com.github.fundamentos_jetpack_compose_listas_lazy.components
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -15,8 +15,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import carreiras.com.github.fundamentos_jetpack_compose_listas_lazy.model.Game
-import carreiras.com.github.fundamentos_jetpack_compose_listas_lazy.ui.theme.FundamentosjetpackcomposelistaslazyTheme
+import thiepai.com.github.fundamentos_jetpack_compose_listas_lazy.model.Game
+import thiepai.com.github.fundamentos_jetpack_compose_listas_lazy.ui.theme.FundamentosjetpackcomposelistaslazyTheme
 
 @Composable
 fun GameCard(game: Game) {

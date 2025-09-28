@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "carreiras.com.github.fundamentos_jetpack_compose_listas_lazy"
+    namespace = "thiepai.com.github.fundamentos_jetpack_compose_listas_lazy"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "carreiras.com.github.fundamentos_jetpack_compose_listas_lazy"
+        applicationId = "thiepai.com.github.fundamentos_jetpack_compose_listas_lazy"
         minSdk = 34
         targetSdk = 36
         versionCode = 1

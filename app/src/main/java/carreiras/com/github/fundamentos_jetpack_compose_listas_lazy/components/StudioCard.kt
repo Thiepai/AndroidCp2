@@ -1,4 +1,4 @@
-package carreiras.com.github.fundamentos_jetpack_compose_listas_lazy.components
+package thiepai.com.github.fundamentos_jetpack_compose_listas_lazy.components
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -13,8 +13,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import carreiras.com.github.fundamentos_jetpack_compose_listas_lazy.model.Game
-import carreiras.com.github.fundamentos_jetpack_compose_listas_lazy.ui.theme.FundamentosjetpackcomposelistaslazyTheme
+import thiepai.com.github.fundamentos_jetpack_compose_listas_lazy.model.Game
+import thiepai.com.github.fundamentos_jetpack_compose_listas_lazy.ui.theme.FundamentosjetpackcomposelistaslazyTheme
 
 @Composable
 fun StudioCard(game: Game, onClick: (() -> Unit)? = null) {

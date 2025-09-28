@@ -1,4 +1,4 @@
-package carreiras.com.github.fundamentos_jetpack_compose_listas_lazy.ui.theme
+package thiepai.com.github.fundamentos_jetpack_compose_listas_lazy.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

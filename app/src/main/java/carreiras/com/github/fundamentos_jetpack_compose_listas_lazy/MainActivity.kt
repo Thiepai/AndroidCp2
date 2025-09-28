@@ -1,4 +1,4 @@
-package carreiras.com.github.fundamentos_jetpack_compose_listas_lazy
+package thiepai.com.github.fundamentos_jetpack_compose_listas_lazy
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -31,12 +31,12 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import carreiras.com.github.fundamentos_jetpack_compose_listas_lazy.components.GameCard
-import carreiras.com.github.fundamentos_jetpack_compose_listas_lazy.components.StudioCard
-import carreiras.com.github.fundamentos_jetpack_compose_listas_lazy.model.Game
-import carreiras.com.github.fundamentos_jetpack_compose_listas_lazy.repository.getAllGames
-import carreiras.com.github.fundamentos_jetpack_compose_listas_lazy.repository.getGamesByStudio
-import carreiras.com.github.fundamentos_jetpack_compose_listas_lazy.ui.theme.FundamentosjetpackcomposelistaslazyTheme
+import thiepai.com.github.fundamentos_jetpack_compose_listas_lazy.components.GameCard
+import thiepai.com.github.fundamentos_jetpack_compose_listas_lazy.components.StudioCard
+import thiepai.com.github.fundamentos_jetpack_compose_listas_lazy.model.Game
+import thiepai.com.github.fundamentos_jetpack_compose_listas_lazy.repository.getAllGames
+import thiepai.com.github.fundamentos_jetpack_compose_listas_lazy.repository.getGamesByStudio
+import thiepai.com.github.fundamentos_jetpack_compose_listas_lazy.ui.theme.FundamentosjetpackcomposelistaslazyTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
