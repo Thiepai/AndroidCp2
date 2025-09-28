@@ -56,12 +56,12 @@ app/
 
 ## Screenshots
 
-> Adicione aqui prints da tela principal, busca e filtro aplicados (opcional).
 
-## Autor
-- Desenvolvido por Ewerton Carreira.
+
+## Membros do grupo
+- Diogo Makoto Mano
+- Thiago Ratão Passerini
 
 ---
 
-Este projeto é um exemplo didático para estudos de Jetpack Compose e listas dinâmicas no Android.
 
