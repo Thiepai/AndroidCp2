@@ -1,16 +1,32 @@
 # Fundamentos Jetpack Compose Listas Lazy
 
-Este projeto é um aplicativo Android desenvolvido em Kotlin, utilizando Jetpack Compose para a construção de interfaces modernas e reativas. O objetivo principal é demonstrar o uso de listas Lazy (LazyColumn e LazyRow) para exibir e filtrar jogos favoritos por estúdio.
+# 🎮 Meus Jogos Favoritos  
 
-## Funcionalidades
+Aplicativo Android desenvolvido em **Kotlin** utilizando **Jetpack Compose**.  
+O objetivo é demonstrar os **fundamentos de listas Lazy (LazyColumn e LazyRow)**, aplicando filtros e compondo interfaces modernas com **Material 3**.  
 
-- Exibição de uma lista de jogos favoritos.
-- Filtro de jogos por nome do estúdio, via campo de texto ou seleção direta.
-- Lista horizontal de estúdios (StudioCard) para filtro rápido.
-- Botão de limpar filtro, exibido apenas quando um filtro está ativo.
-- Interface moderna utilizando Material 3.
+---
 
-## Estrutura do Projeto
+## 📱 Demonstração  
+Exemplo da tela principal com busca e filtros:  
+
+<img width="450" height="902" alt="image" src="https://github.com/user-attachments/assets/2419176f-04e7-4314-bf17-a0451a468503" />
+<img width="451" height="915" alt="image" src="https://github.com/user-attachments/assets/c8a3516e-163e-4a42-b011-b990f59fec23" />
+<img width="445" height="897" alt="image" src="https://github.com/user-attachments/assets/3db4aacd-df3f-4114-92ea-0964ccd31fab" />
+
+---
+
+## ✨ Funcionalidades  
+- Exibição de uma lista de jogos favoritos (**LazyColumn**).  
+- Filtro de jogos por **nome do estúdio**:  
+  - Digitação no campo de texto.  
+  - Seleção rápida através da lista horizontal (**LazyRow**).  
+- Botão **"Limpar filtro"** exibido apenas quando um filtro está ativo.  
+- Interface moderna seguindo padrões do **Material 3**.  
+
+---
+
+## 🗂️ Estrutura do Projeto  
 
 ```
 app/
@@ -33,31 +49,23 @@ app/
  └── ...
 ```
 
-## Como funciona
 
-- A tela principal exibe uma lista de jogos e uma lista horizontal de estúdios.
-- O usuário pode filtrar os jogos digitando o nome do estúdio ou clicando em um StudioCard.
-- O filtro pode ser limpo facilmente com o botão "Limpar filtro".
+---
 
-## Como rodar o projeto
+## ⚙️ Como funciona  
+1. A tela inicial exibe todos os jogos cadastrados.  
+2. O usuário pode filtrar os jogos:  
+   - Digitando o nome do estúdio no campo de busca.  
+   - Tocando em um cartão de estúdio (**StudioCard**).  
+3. O filtro pode ser removido facilmente com o botão **"Limpar filtro"**.  
 
-1. Clone este repositório:
-   ```sh
-   git clone <url-do-repositorio>
-   ```
-2. Abra o projeto no Android Studio.
-3. Execute em um emulador ou dispositivo físico Android.
+---
 
 ## Tecnologias utilizadas
 - **Kotlin**
 - **Jetpack Compose**
 - **Material 3**
 - **Gradle Kotlin DSL**
-
-## Screenshots
-<img width="450" height="902" alt="image" src="https://github.com/user-attachments/assets/2419176f-04e7-4314-bf17-a0451a468503" />
-<img width="451" height="915" alt="image" src="https://github.com/user-attachments/assets/c8a3516e-163e-4a42-b011-b990f59fec23" />
-<img width="445" height="897" alt="image" src="https://github.com/user-attachments/assets/3db4aacd-df3f-4114-92ea-0964ccd31fab" />
 
 
 
