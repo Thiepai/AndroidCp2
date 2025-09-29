@@ -55,6 +55,9 @@ app/
 - **Gradle Kotlin DSL**
 
 ## Screenshots
+<img width="450" height="902" alt="image" src="https://github.com/user-attachments/assets/2419176f-04e7-4314-bf17-a0451a468503" />
+<img width="451" height="915" alt="image" src="https://github.com/user-attachments/assets/c8a3516e-163e-4a42-b011-b990f59fec23" />
+<img width="445" height="897" alt="image" src="https://github.com/user-attachments/assets/3db4aacd-df3f-4114-92ea-0964ccd31fab" />
 
 
 
