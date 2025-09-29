@@ -58,6 +58,13 @@ class MainActivity : ComponentActivity() {
 fun GamesScreen(modifier: Modifier = Modifier) {
     var searchTextState by remember { mutableStateOf("") }
     var gamesListState by remember { mutableStateOf(getAllGames()) }
+    val hasActiveFilter = searchTextState.isNotBlank()
+
+    fun applyFilter(input: String) {
+        searchTextState = input
+        gamesListState = getGamesByStudio(input)
+    }
+
 
     Column(modifier = modifier.padding(16.dp)) {
         Text(
@@ -72,7 +79,7 @@ fun GamesScreen(modifier: Modifier = Modifier) {
             modifier = Modifier.fillMaxWidth(),
             label = { Text(text = "Nome do estúdio") },
             trailingIcon = {
-                IconButton(onClick = { gamesListState = getGamesByStudio(searchTextState) }) {
+                     IconButton(onClick = { applyFilter(searchTextState) }) {
                     Icon(
                         imageVector = Icons.Default.Search,
                         contentDescription = ""
@@ -80,30 +87,30 @@ fun GamesScreen(modifier: Modifier = Modifier) {
                 }
             }
         )
-        // Botão de limpar filtro
-        if (searchTextState.isNotEmpty() || gamesListState != getAllGames()) {
-            Text(
-                text = "Limpar filtro",
-                modifier = Modifier
-                    .padding(top = 8.dp)
-                    .fillMaxWidth()
-                    .clickable {
-                        searchTextState = ""
-                        gamesListState = getAllGames()
-                    },
-                fontWeight = FontWeight.SemiBold,
-                color = androidx.compose.ui.graphics.Color.Blue
-            )
-        }
+
+        // Botão de limpar filtro (Material3)
+        if (hasActiveFilter) {
+                androidx.compose.material3.TextButton(
+                onClick = {
+                                searchTextState = ""
+                                gamesListState = getAllGames()
+                            },
+                        modifier = Modifier.padding(top = 8.dp)
+                             ) {
+                         Text("Limpar filtro")
+                     }
+             }
         Spacer(modifier = Modifier.height(16.dp))
-        LazyRow(){
-            items(gamesListState){ game ->
-                StudioCard(game = game, onClick = {
-                    searchTextState = game.studio
-                    gamesListState = getGamesByStudio(game.studio)
-                })
-            }
+        val studios = remember(gamesListState) {
+            gamesListState.map { it.studio }.distinct()
         }
+        LazyRow() {
+            items(studios) { studio ->
+                     StudioCard(studio = studio, onClick = {
+                             applyFilter(studio)
+                         })
+                 }
+             }
         Spacer(modifier = Modifier.height(16.dp))
         LazyColumn() {
             items(gamesListState) {
@@ -112,6 +119,8 @@ fun GamesScreen(modifier: Modifier = Modifier) {
         }
     }
 }
+
+
 
 @Preview(showBackground = true, name = "Games Screen Preview")
 @Composable
@@ -125,8 +134,7 @@ fun PreviewGamesScreen() {
 @Composable
 fun PreviewStudioCard() {
     FundamentosjetpackcomposelistaslazyTheme {
-        StudioCard(game = Game(1, "Example Game", "Example Studio", 2023))
-    }
+        StudioCard(studio = "Example Studio")    }
 }
 
 @Preview(showBackground = true, name = "Game Card Preview")

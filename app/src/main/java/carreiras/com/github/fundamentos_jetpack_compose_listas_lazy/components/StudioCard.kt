@@ -17,7 +17,8 @@ import thiepai.com.github.fundamentos_jetpack_compose_listas_lazy.model.Game
 import thiepai.com.github.fundamentos_jetpack_compose_listas_lazy.ui.theme.FundamentosjetpackcomposelistaslazyTheme
 
 @Composable
-fun StudioCard(game: Game, onClick: (() -> Unit)? = null) {
+fun StudioCard(studio: String, onClick: (() -> Unit)? = null) {
+
     Card(modifier = Modifier
         .size(100.dp)
         .padding(end = 4.dp)
@@ -27,7 +28,7 @@ fun StudioCard(game: Game, onClick: (() -> Unit)? = null) {
             horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier.fillMaxSize()
         ) {
-            Text(text = game.studio)
+            Text(text = studio)
         }
     }
 }
@@ -36,6 +37,6 @@ fun StudioCard(game: Game, onClick: (() -> Unit)? = null) {
 @Composable
 fun PreviewStudioCard() {
     FundamentosjetpackcomposelistaslazyTheme {
-        StudioCard(game = Game(1, "Example Game", "Example Studio", 2023))
+        StudioCard(studio = "Example Studio")
     }
 }
