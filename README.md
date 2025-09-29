@@ -62,8 +62,9 @@ app/
 
 
 ## Membros do grupo
-- Diogo Makoto Mano
-- Thiago Ratão Passerini
+- Diogo Makoto Mano, 98446
+- Thiago Ratão Passerini, 551351
+- Gabriel Valério Gouveia, 552041
 
 ---
 
